@@ -1,6 +1,6 @@
-# 🎛 Industrial Sensor Medallion Lakehouse (Microsoft Fabric)
+# 🎛 Industrial Sensor Simulation Medallion Lakehouse (Microsoft Fabric)
 
-# 🎛 Industrial Sensor Medallion Lakehouse (Microsoft Fabric)
+
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
 ![Fabric](https://img.shields.io/badge/Microsoft%20Fabric-Lakehouse-0078D4)
