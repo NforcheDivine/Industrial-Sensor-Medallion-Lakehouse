@@ -1,4 +1,5 @@
-# Industrial Sensor Medallion Lakehouse (Microsoft Fabric)
+# 🎛 Industrial Sensor Medallion Lakehouse (Microsoft Fabric)
+
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
 ![Fabric](https://img.shields.io/badge/Microsoft%20Fabric-Lakehouse-0078D4)
 ![Spark](https://img.shields.io/badge/Spark-PySpark-FC4D0D)
@@ -9,7 +10,9 @@
 
 End-to-end Medallion Architecture (Bronze → Silver → Gold) implementation for industrial telemetry using Microsoft Fabric, featuring incremental ingestion, Spark-based data validation, quarantine handling, and DirectLake KPI reporting.
 
-## Executive Summary
+---
+
+## 📝 Executive Summary
 
 This project simulates an industrial sensor telemetry platform and implements a production-style Lakehouse architecture:
 
@@ -21,9 +24,11 @@ This project simulates an industrial sensor telemetry platform and implements a 
 
 The system demonstrates scalable tabular analytics without GPU dependency, executed entirely on CPU using Spark in Microsoft Fabric.
 
-## Architecture Overview
+---
 
-### Bronze Layer — Incremental Ingestion (🥉)
+## 🏗 Architecture Overview
+
+### 🥉 Bronze Layer — Incremental Ingestion
 
 **Purpose:** Load raw telemetry micro-batches safely and idempotently.  
 **Source:** CSV micro-batches  
@@ -32,7 +37,7 @@ The system demonstrates scalable tabular analytics without GPU dependency, execu
 
 The ingestion log ensures that if the notebook reruns, previously ingested files are not duplicated.
 
-### Silver Layer — Governance & Validation (🥈)
+### 🥈 Silver Layer — Governance & Validation
 
 **Purpose:** Enforce data contracts and isolate invalid records.
 
@@ -47,7 +52,7 @@ The ingestion log ensures that if the notebook reruns, previously ingested files
 
 Invalid records are quarantined for review instead of failing the pipeline.
 
-### Gold Layer — Business Aggregates (🥇)
+### 🥇 Gold Layer — Business Aggregates
 
 **Purpose:** Create analytics-ready tables.  
 **Output:** `dbo.gold_device_5min`
@@ -60,7 +65,9 @@ Invalid records are quarantined for review instead of failing the pipeline.
 
 This table powers the BI layer.
 
-## KPI Dashboard (DirectLake)
+---
+
+## 📊 KPI Dashboard (DirectLake)
 
 A DirectLake semantic model is built from the Gold layer.
 
@@ -87,7 +94,9 @@ Dirty Rate % =
 - Device slicer  
 - Energy trend over time  
 
-## Telemetry Simulation
+---
+
+## 🔁 Telemetry Simulation
 
 A local Python script generates continuous micro-batches of telemetry data.
 
@@ -109,9 +118,11 @@ Bad records are intentionally injected to test governance logic.
 .\.venv\Scripts\python.exe src\01_generate_telemetry_stream.py
 ```
 
-Stop with: `Ctrl + C`
+Stop with: **Ctrl + C**
 
-## Fabric Implementation Steps
+---
+
+## 🛠 Fabric Implementation Steps
 
 1. Create Fabric Workspace  
 2. Create Lakehouse  
@@ -123,7 +134,9 @@ Stop with: `Ctrl + C`
 5. Create DirectLake semantic model  
 6. Build KPI dashboard  
 
-## Repository Structure
+---
+
+## 📂 Repository Structure
 
 ```
 Industrial-Sensor-Medallion-Lakehouse/
@@ -139,7 +152,9 @@ Industrial-Sensor-Medallion-Lakehouse/
 └── requirements.txt
 ```
 
-## Engineering Highlights
+---
+
+## 🚀 Engineering Highlights
 
 - Idempotent ingestion via ingestion log  
 - Explicit DAX measures (no implicit aggregations)  
@@ -148,7 +163,9 @@ Industrial-Sensor-Medallion-Lakehouse/
 - DirectLake BI delivery  
 - Governance KPI (Dirty Rate %)  
 
-## Execution Environment
+---
+
+## 🖥 Execution Environment
 
 - Microsoft Fabric (Trial / Pro)  
 - Spark (PySpark)  
@@ -158,7 +175,9 @@ Industrial-Sensor-Medallion-Lakehouse/
 
 All processing executed on CPU with Spark — no GPU dependency.
 
-## What This Project Demonstrates
+---
+
+## 🎯 What This Project Demonstrates
 
 - Production-style Lakehouse design  
 - Incremental micro-batch ingestion  
@@ -167,7 +186,9 @@ All processing executed on CPU with Spark — no GPU dependency.
 - Business-facing KPI delivery  
 - Industrial telemetry modeling  
 
-## Author
+---
+
+## 👤 Author
 
 **Nforche Divine Ako**  
 Industrial Data & Analytics Engineering
