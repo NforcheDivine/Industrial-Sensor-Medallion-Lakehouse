@@ -28,6 +28,36 @@ This project simulates an industrial sensor telemetry platform and implements a 
 The system demonstrates scalable tabular analytics without GPU dependency, executed entirely on CPU using Spark in Microsoft Fabric.
 
 ---
+---
+
+## 🎯 Project Purpose
+
+Modern industrial environments generate continuous streams of sensor telemetry from machines, turbines, pumps, and production lines. 
+
+However, raw sensor data alone is not useful without:
+
+- Reliable ingestion mechanisms
+- Data quality enforcement
+- Structured transformation layers
+- Business-ready KPI reporting
+
+This project simulates an industrial telemetry environment where micro-batch sensor files are continuously generated and ingested into a Lakehouse architecture.
+
+It demonstrates how to:
+
+- Ingest telemetry incrementally without duplication
+- Enforce validation rules and quarantine invalid records
+- Transform raw sensor data into operational KPIs
+- Deliver analytics-ready datasets to business stakeholders
+
+The system models a realistic industrial monitoring use case, such as:
+
+- Predictive maintenance tracking
+- Abnormal vibration detection
+- Energy consumption monitoring
+- Process health dashboards
+
+---
 
 ## 🏗 Architecture Overview
 
