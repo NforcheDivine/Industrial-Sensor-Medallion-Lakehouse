@@ -1,0 +1,23 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local data (keep code, not generated batches)
+data/
+# (optional) keep structure but ignore files:
+# data/**/*
+# !data/.gitkeep
+
+# Logs
+*.log
