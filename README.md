@@ -1,12 +1,15 @@
 # 🎛 Industrial Sensor Medallion Lakehouse (Microsoft Fabric)
 
-https://img.shields.io/badge/Python-3.10+-blue
-https://img.shields.io/badge/Microsoft%20Fabric-Lakehouse-0078D4
-https://img.shields.io/badge/Spark-PySpark-FC4D0D
-https://img.shields.io/badge/Data-Industrial%20Telemetry-grey
-https://img.shields.io/badge/Architecture-Medallion-green
-https://img.shields.io/badge/PowerBI-DirectLake-F2C811
-https://img.shields.io/badge/Status-Completed-brightgreen
+# 🎛 Industrial Sensor Medallion Lakehouse (Microsoft Fabric)
+
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![Fabric](https://img.shields.io/badge/Microsoft%20Fabric-Lakehouse-0078D4)
+![Spark](https://img.shields.io/badge/Spark-PySpark-FC4D0D)
+![Telemetry](https://img.shields.io/badge/Data-Industrial%20Telemetry-grey)
+![Architecture](https://img.shields.io/badge/Architecture-Medallion-green)
+![DirectLake](https://img.shields.io/badge/PowerBI-DirectLake-F2C811)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+``
 
 End-to-end Medallion Architecture (Bronze → Silver → Gold) implementation for industrial telemetry using Microsoft Fabric, featuring incremental ingestion, Spark-based data validation, quarantine handling, and DirectLake KPI reporting.
 
@@ -280,6 +283,28 @@ All processing executed on CPU with Spark — no GPU dependency.
 - Business-facing KPI delivery  
 - Industrial telemetry modeling  
 
+
+## 📸 System Screenshots
+
+---
+
+### Power BI KPI Dashboard
+![KPI Dashboard](assets/dashboard.png)
+
+---
+
+### Fabric Lakehouse Tables
+![Lakehouse Tables](assets/lakehouse_tables.png)
+
+---
+
+### Quarantine (Dirty) Records Table
+![Dirty Records](assets/dirty_table.png)
+
+---
+
+### Incremental Ingestion Log
+![Ingestion Log](assets/ingestion_log.png)
 ---
 
 ## 👤 Author
